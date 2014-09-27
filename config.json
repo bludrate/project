@@ -1,0 +1,19 @@
+{
+    "SERVER_PORT": "66",
+    "STYLUS": {
+        "FILES": {
+            "app/css/styles.css" : ["app/stylus/main.styl" ]
+        },
+        "COMPRESS": false
+    },
+    "WATCH": {
+        "FILES": {
+            "STYLUS": ["app/stylus/**/*.styl"],
+            "JUST_RELOAD": ["app/**/*.html", "app/js/**/*.js"]
+        }
+    },
+    "AUTOPREFIXER": {
+        "SRC": "app/css/*.css",
+        "DEST":  "app/css/"
+    }
+}

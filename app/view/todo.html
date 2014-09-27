@@ -1,0 +1,31 @@
+<form ng-submit="addTodo()" class="container add-todo">
+    <div class="col-sm-9">
+        <input type="text" placeholder="todo text" class="form-control"/>
+    </div>
+    <div class="col-sm-3">
+        <button type="submit" class="btn btn-primary btn-block">add</button>
+    </div>
+</form>
+<form class="container">
+    <table class="table table-striped table-hover todo-table">
+        <thead>
+            <tr>
+                <th><input type="checkbox"/></th>
+                <th>completed</th>
+                <th colspan="2">some text</th>
+            </tr>
+        </thead>
+        <tr ng-repeat="todo in todos">
+            <td class="col-sm-1">
+                <input type="checkbox" ng-model="todo.checked"/>
+            </td>
+            <td class="col-sm-1">
+                <input type="checkbox" ng-model="todo.completed"/>
+            </td>
+            <td class="col-sm-9">{{todo.text}}</td>
+            <td class="col-sm-1">
+                <button class="btn btn-danger" ng-click="removeTodo($index)">remove</button>
+            </td>
+        </tr>
+    </table>
+</form>

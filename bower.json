@@ -1,0 +1,27 @@
+{
+  "name": "My todo",
+  "version": "0.1",
+
+  "authors": [
+    "Pronyakin Oleksii Oleksii_Pronyakin@epam.com"
+  ],
+
+  "description": "First todo app",
+  "main": "source/",
+  "license": "MIT",
+
+  "dependencies": {
+    "angular-route": "~1.2",
+    "requirejs" : "~2.1.8",
+    "angular" : "~1.2",
+    "bootstrap": "~3.2",
+    "jquery": "2.1.1",
+    "angularAMD": "latest"
+  },
+
+  "ignore": [
+    "node_modules",
+    "dev/lib"
+  ]
+}
+
